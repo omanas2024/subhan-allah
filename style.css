@@ -1,0 +1,120 @@
+/* ضبط الصفحة في منتصف الشاشة */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  direction: rtl;
+  background: #ffffff;
+  color: black;
+  transition: background 0.5s, color 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* ترتيب المحتوى في المنتصف */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ترتيب الأزرار */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  max-width: 400px;
+}
+
+/* وضع زر + على اليمين */
+.add-counter {
+  order: 3;
+  margin-right: auto;
+}
+
+/* تنسيق كل مسبحة */
+.counter-container {
+  width: 60%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* تنسيق قائمة الأذكار */
+.counter select {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* تنسيق الأرقام */
+span {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 8px 14px;
+  min-width: 60px;
+  display: inline-block;
+  text-align: center;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  color: black;
+}
+
+/* تحسين الأزرار */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+button {
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  background-color: #87cefa;
+  color: black;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* الوضع الليلي */
+.dark-mode {
+  background: #222;
+  color: white;
+}
+
+.dark-mode .counter-container {
+  background: #333;
+  border-color: white;
+}
+
+.dark-mode button {
+  background-color: #555;
+  color: white;
+}
+
+.dark-mode select {
+  background: #555;
+  color: white;
+  border: 1px solid white;
+}
